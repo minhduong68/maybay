@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="infoPanel">
+            <h3>Game Info</h3>
+            <p>Current Bet: <span id="currentBet">100</span></p>
+            <button onclick="changeBet(5)">5k</button>
+            <button onclick="changeBet(10)">10k</button>
+            <button onclick="changeBet(50)">50k</button>
+            <button onclick="changeBet(100)">100k</button>
+            <button onclick="changeBet(500)">500k</button>
+            <button onclick="changeBet(1000)">1M</button>
+            <button onclick="changeBet(5000)">5M</button>
+            <button onclick="changeBet(10000)">10M</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <label for="speed">Enemy Ship Speed (Multiplier): </label>
+    <input type="number" id="speed" min="1" max="10" value="2">
+    <button onclick="updateSpeed()">Update Speed</button>
+    <script>
+        function updateSpeed() {
+            const speed = document.getElementById('speed').value;
+            // Send speed change to server or update game logic
+            alert('Enemy ship speed updated to ' + speed);
+        }
+    </script>
+</body>
+</html>
